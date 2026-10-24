@@ -1,0 +1,9 @@
+streamlit
+pandas
+scikit-learn
+joblib
+sentence-transformers
+beautifulsoup4
+playwright
+plotly
+python-dotenv
