@@ -1,0 +1,53 @@
+﻿Conflicting rows removed: 2
+   Text Snippet            CCPA Category dataset_origin
+14    Sponsored          No Dark Pattern         Indian
+45    Sponsored  Disguised Advertisement         Indian
+
+Duplicate texts removed: 0
+
+Final training data:
+CCPA Category
+False Urgency              427
+Confirm Shaming            126
+No Dark Pattern             52
+Subscription Trap           46
+Trick Question              21
+Drip Pricing                19
+Disguised Advertisement     14
+Name: count, dtype: int64
+dataset_origin
+Princeton    568
+Indian       137
+Name: count, dtype: int64
+
+ALL DATA
+                         precision    recall  f1-score   support
+
+        Confirm Shaming       0.98      0.93      0.96       126
+Disguised Advertisement       0.53      0.64      0.58        14
+           Drip Pricing       0.59      0.89      0.71        19
+          False Urgency       0.97      0.96      0.96       427
+        No Dark Pattern       0.39      0.35      0.37        52
+      Subscription Trap       0.81      0.83      0.82        46
+         Trick Question       0.61      0.81      0.69        21
+
+               accuracy                           0.89       705
+              macro avg       0.70      0.77      0.73       705
+           weighted avg       0.89      0.89      0.89       705
+
+INDIAN ROWS ONLY
+                         precision    recall  f1-score   support
+
+        Confirm Shaming       1.00      0.50      0.67        12
+Disguised Advertisement       0.56      0.64      0.60        14
+           Drip Pricing       0.61      0.88      0.72        16
+          False Urgency       0.60      0.83      0.70        18
+        No Dark Pattern       0.58      0.35      0.43        52
+      Subscription Trap       0.61      0.85      0.71        13
+         Trick Question       0.61      0.92      0.73        12
+
+               accuracy                           0.61       137
+              macro avg       0.65      0.71      0.65       137
+           weighted avg       0.63      0.61      0.59       137
+
+Saved model.
